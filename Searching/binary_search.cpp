@@ -1,4 +1,7 @@
-// Time complexity is O(log (n))
+/*
+  More advanced approach to searching for an element in an array 
+  Works only for sorted arrays
+  Time complexity-O(log(n)),where n is no. of elements */  
 #include <iostream>
 #include <stdio.h>
 using namespace std;

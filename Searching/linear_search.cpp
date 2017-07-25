@@ -1,3 +1,6 @@
+/*Simplest approach for searching for an element in an array
+  Works for sorted and unsorted arrays
+  Time complexity-O(n),where n is no. of elements */
 #include <iostream>
 #include <stdio.h>
 using namespace std;
