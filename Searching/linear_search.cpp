@@ -2,7 +2,7 @@
 #include <stdio.h>
 using namespace std;
 int arr[100005];
-int LinearSearch(int arr[],int key,int n)
+int linear_search(int arr[],int key,int n)
 {
 	int i;
 	for(i=0;i<n;i++)
@@ -23,7 +23,7 @@ int main()
 	for(i=0;i<n;i++)
 		cin >> arr[i];
 	cin >> key;
-	int found=LinearSearch(arr,key,n);
+	int found=linear_search(arr,key,n);
 	if(found>0)
 		cout << "Element found at index " << found << endl;
 	else

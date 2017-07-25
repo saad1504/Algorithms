@@ -3,7 +3,7 @@
 #include <stdio.h>
 using namespace std;
 int arr[100005];
-int BinarySearch(int arr[],int key,int l,int r,int n)  
+int binary_search(int arr[],int key,int l,int r,int n)  
 {
 	int mid;
 	if(l<=r)
@@ -12,9 +12,9 @@ int BinarySearch(int arr[],int key,int l,int r,int n)
 		if(arr[mid]==key)
 			return mid;
 		else if(arr[mid]<key)
-			return BinarySearch(arr,key,mid+1,r,n);
+			return binary_search(arr,key,mid+1,r,n);
 		else if(arr[mid]>key)
-			 return BinarySearch(arr,key,l,mid-1,n);
+			 return binary_search(arr,key,l,mid-1,n);
 	}
 	return -1;
 }
@@ -31,7 +31,7 @@ int main()
 	cin >> key;
 	l=0;
 	r=n-1;
-	int found=BinarySearch(arr,key,l,r,n);
+	int found=binary_search(arr,key,l,r,n);
 	if(found>0)
 		cout << "Element found at index " << found << endl;
 	else
